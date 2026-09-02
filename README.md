@@ -1,33 +1,25 @@
-***Nesne Yönelimli Beyblade Savaş Simülasyonu
-Atatürk Üniversitesi Mühendislik Fakültesi Yazılım Mühendisliği Bölümü kapsamında geliştirilen bu proje; nesne yönelimli programlama (OOP) prensiplerini kullanarak farklı özelliklere sahip Beyblade karakterlerinin savaş mekaniklerini simüle eden C++ tabanlı bir konsol uygulamasıdır.
+# C Tabanlı Ürün Yönetim ve Veri Tabanı Sistemi
 
-***Projenin Amacı ve Kapsamı
-Bu proje, yazılım mimarisi ve nesne yönelimli tasarım ilkelerini pratik etmek amacıyla geliştirilmiştir:
+Atatürk Üniversitesi Mühendislik Fakültesi Yazılım Mühendisliği Bölümü kapsamında geliştirilen bu proje; C programlama dilinin temel kavramlarını (`struct`, dinamik bellek yönetimi, pointerlar, dosya I/O ve sıralama algoritmaları) kullanarak konsol üzerinden çalışan modüler bir ürün yönetim sistemidir.
 
-Soyut Sınıflar (Abstract Classes): Temel Beyblade yapısı için ortak bir şablon oluşturulması.
+## Projenin Amacı ve Kapsamı
+Bu proje, statik diziler yerine dinamik bellek yapıları kullanarak performanslı ve güvenli veri yönetimi yapmayı amaçlar:
+- Dinamik Bellek Yönetimi (`malloc`, `realloc`, `free`): Ürün sayısı arttıkça belleğin dinamik olarak genişletilmesi ve bellek sızıntılarının önlenmesi.
+- Dinamik String Yönetimi: Bellek tasarrufu sağlamak için `strdup` ile dinamik bellek tahsisli ürün adı ve kategori yönetimi.
+- Dosya Kalıcılığı (File I/O): Tüm ekleme, güncelleme ve silme işlemlerinin `veri_tabani.txt` dosyasına güvenli şekilde senkronize edilmesi.
+- Algoritmik Sıralama: Kayıtlı ürünlerin ID numaralarına göre `Bubble Sort` algoritmasıyla küçükten büyüğe otomatik sıralanması.
 
-Kalıtım (Inheritance): Farklı Beyblade türlerinin ana sınıftan türetilmesi.
+## Kullanılan Teknolojiler ve Kütüphaneler
+Projede kullanılan ana teknolojiler ve alt yapı bileşenleri:
+- C Programlama Dili: Sistem mantığı ve algoritmik işlemler.
+- Standart Kütüphaneler: Giriş/çıkış, bellek ve string operasyonları için `<stdio.h>`, `<stdlib.h>`, `<string.h>`.
+- Veri Yapıları: `struct` (Yapılar) ve Dinamik Diziler (`Pointer Arrays`).
+- Algoritmalar: Bubble Sort (Sıralama) ve Lineer Arama.
 
-Sanal Fonksiyonlar (Virtual Functions): Savaş ve saldırı mekaniklerinin polimorfizm (çok biçimlilik) ile yönetilmesi.
+## Kurulum ve Çalıştırma
+Projeyi bilgisayarınızda çalıştırmak için terminale sırasıyla şu komutları yazabilirsiniz:
 
-Kapsülleme (Encapsulation): Karakter güç, saldırı ve savunma istatistiklerinin güvenli şekilde saklanması.
-
-***Kullanılan Teknolojiler ve Kütüphaneler
-Projede kullanılan ana teknolojiler ve altyapı bileşenleri:
-
-C++ Programlama Dili: Nesne yönelimli mimari ve mantıksal işlemler.
-
-OOP Konseptleri: Kalıtım, soyut sınıflar, sanal fonksiyonlar ve polimorfizm.
-
-Standart Kütüphaneler: iostream, string, vector vb.
-
-***Kurulum ve Çalıştırma
-Projeyi bilgisayarınızda çalıştırmak için terminale sırasıyla aşağıdaki komutları yazabilirsiniz:
-
-git clone https://github.com/gulozturkk/beyblade_simulasyonu.git
-
-cd beyblade_simulasyonu
-
-g++ main.cpp -o beyblade_simulasyonu
-
-beyblade_simulasyonu.exe (Windows için) veya ./beyblade_simulasyonu (Mac/Linux için)
+1. git clone https://github.com/gulozturkk/urun_yonetim_sistemi.git
+2. cd urun_yonetim_sistemi
+3. gcc main.c -o urun_sistemi
+4. urun_sistemi.exe (Windows için) veya ./urun_sistemi (Mac/Linux için)
