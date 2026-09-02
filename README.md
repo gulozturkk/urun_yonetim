@@ -19,7 +19,7 @@ C++ Programlama Dili: Nesne yönelimli mimari ve mantıksal işlemler.
 
 OOP Konseptleri: Kalıtım, soyut sınıflar, sanal fonksiyonlar ve polimorfizm.
 
-Standart Kütüphaneler: <iostream>, <string>, <vector> vb.
+Standart Kütüphaneler: iostream, string, vector vb.
 
 ***Kurulum ve Çalıştırma
 Projeyi bilgisayarınızda çalıştırmak için terminale sırasıyla aşağıdaki komutları yazabilirsiniz:
